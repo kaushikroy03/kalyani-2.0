@@ -1,0 +1,23 @@
+.button{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+    color: #fff;
+    border-radius: 25px;
+    border: none;
+    margin-top: 20px;
+
+}
+.button-blue{
+    background-color: #3a45e0;
+    box-shadow: 0px 1px 6px rgb(106, 116, 255);
+}
+.button-pink{
+    background-color: #ff2374;
+    box-shadow: 0px 1px 6px rgb(255, 56, 110);
+}
+.button-container{
+    max-width: 200px;
+    margin:auto;
+}

@@ -1,0 +1,40 @@
+.para-wrapper{
+	width:80%;
+	max-width:800px;
+	margin:40px auto 0;
+	font-weight:500;
+}
+.para{
+	margin-bottom: 50px;
+    letter-spacing: 0.03em;
+	line-height: 28px;
+    font-size: 18px;
+
+	background: #f9f8ff;
+    padding: 21px;
+    border-radius: 12px;
+}
+.para-heading{
+	margin-bottom:20px;
+	color: #32324c;
+	font-size:30px;
+	position: relative;
+}
+
+//large tablet
+@mixin paragraph--lt(){
+	.para-wrapper{
+		margin:50px auto 0;
+	}
+	.para-heading{
+		font-size:32px;
+	}
+
+	.treatment{
+		.para{
+			background: unset;
+		    padding: unset;
+		    border-radius: unset;
+		}
+	}
+}

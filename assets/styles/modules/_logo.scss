@@ -1,0 +1,46 @@
+#logo{
+	float: left;
+	a{
+		display: inline-block;
+		color: #4c69e0;
+	}
+	img{
+		width:30px;
+		height:30px;
+	}
+}
+
+/*.logo-blue{
+	color: #4c69e0 !important;
+}*/
+
+@mixin logo--sm(){
+	.logo-name{
+		display: none;
+	}
+}
+
+@mixin logo--mm(){
+	#logo{
+		span{
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	.logo-name{
+		font-size: 18px;
+		line-height: 33px;
+	}
+}
+
+@mixin logo--st(){
+	.logo-name{
+		font-size: 20px;
+	}
+}
+
+/*@mixin logo--sd(){
+	.logo-name{
+		font-size: 25px;
+	}
+}*/

@@ -1,0 +1,110 @@
+//sm - small mobile
+@media screen and (min-width:320px) {
+    @include header-lay--sm();
+    @include logo--sm();
+
+    //@include info--sm();
+    @include heading--sm();
+    @include sub-heading--sm();
+    @include small-heading--sm();
+
+    //@include gallery--sm();
+
+}
+
+//mm - midium mobile
+@media screen and (min-width: 480px){
+    @include header-lay--mm();
+    @include logo--mm();
+    @include menu--mm();
+
+    @include cover--mm();
+
+    @include page-name--mm();
+
+    @include treatment--mm();
+
+    @include contact--mm();
+
+    //@include success--mm()
+}
+
+//lm - large mobile
+@media screen and (min-width: 640px){
+    @include header-lay--lm();
+    @include menu--lm();
+
+    @include cover--lm();
+
+    @include info--lm();
+
+
+    @include page-name--lm();
+
+    @include treatment-lm();
+
+    @include contact--lm();
+
+    @include gallery--lm();
+
+}
+
+//st - small tablet
+@media screen and (min-width:720px){
+    @include header-lay--st();
+    @include logo--st();
+
+    @include cover--st();
+
+    @include info--st();
+
+    @include page_name--st();
+
+    @include treatment--st();
+}
+
+//lt - large tablet
+@media screen and (min-width:1024px){
+    @include header-lay--lt();
+
+    @include cover--lt();
+
+    @include info--lt();
+
+    @include paragraph--lt();
+
+    @include page-name--lt();
+
+    @include treatment--lt();
+
+    @include contact--lt();
+}
+
+//sd - small desktop
+@media screen and (min-width:1366px){
+    @include header-lay--sd();
+    //@include logo--sd();
+    @include menu--sd();
+
+    @include cover--sd();
+
+    @include info--sd();
+
+    @include lang--sd();
+
+    @include footer--sd();
+
+    @include page-name--sd();
+
+    @include treatment--sd();
+
+    @include gallery--sd();
+}
+
+//ld - large desktop
+@media screen and (min-width:1800px){
+    @include header-lay--ld();
+    @include menu--ld();
+
+    @include treatment--ld();
+}

@@ -1,0 +1,112 @@
+.treatment{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    .mb{
+        margin-bottom: 10px;
+    }
+}
+.treatment-cont{
+    .treatment:nth-child(2){
+        flex-direction: column-reverse;
+    }
+}
+
+.treatment-part{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+.t-text{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.background-green{
+    background-color: #00dc78;
+}
+.background-navy{
+    background-color: #2d2d54;
+    padding-top: 50px;
+    padding-bottom: 55px;
+}
+.background-pink{
+    background-color: #ff2374;
+}
+.t-headline{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.t-subline{
+    line-height: 24px;
+}
+.t-headline, .t-subline{
+    color: #fff;
+}
+@mixin treatment--mm() {
+    .background-green{
+        border-top-right-radius: 500px;
+        border-bottom-right-radius: 500px;
+    }
+    .background-navy{
+        border-top-left-radius: 500px;
+        border-bottom-left-radius: 500px;
+    }
+    .background-pink{
+        border-top-right-radius: 500px;
+        border-bottom-right-radius: 500px;
+    }
+}
+@mixin treatment-lm() {
+    .treatment-part{
+        width: 90vw;
+    }
+    .treatment-cont{
+        .treatment:nth-child(2){
+            align-items: flex-end;
+        }
+    }
+}
+@mixin treatment--st() {
+    .treatment{
+        margin-top:40px;
+    }
+}
+@mixin treatment--lt() {
+    .treatment{
+        margin-top:120px;
+        flex-direction: row;
+    }
+    .treatment-cont{
+        .treatment:nth-child(2){
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    .t-headline{
+        font-size: 35px;
+    }
+    .t-subline{
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+@mixin treatment--sd() {
+    .t-headline{
+        font-size: 40px;
+    }
+    .t-subline{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+@mixin treatment--ld() {
+    .t-headline{
+        font-size: 50px;
+    }
+}

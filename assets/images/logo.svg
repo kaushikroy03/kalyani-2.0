@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:url(#SVGID_1_);stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#461FEA;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:url(#SVGID_2_);stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="14.967" y1="18.5085" x2="29.5047" y2="14.6131">
+	<stop  offset="0" style="stop-color:#0000FF"/>
+	<stop  offset="0.8548" style="stop-color:#ED1E79"/>
+</linearGradient>
+<path class="st0" d="M17,13.1c0,0-1.3-3.1,1.6-6l5.7-5.6c0,0,3.8,4.8,0,8.7l-5.1,5.1c0,0-4.9,4.8-0.9,9l6,6c0,0,4.6-4.9,0-9.1
+	l-3.1-2.9"/>
+<path class="st1" d="M11,16"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="3.4604" y1="29.5567" x2="21.939" y2="2.161">
+	<stop  offset="0" style="stop-color:#0000FF"/>
+	<stop  offset="0.8548" style="stop-color:#ED1E79"/>
+</linearGradient>
+<path class="st2" d="M16.2,30.5h-9c-1.6,0-1.5-1.5-1.5-1.5L5.7,3c0-1.7,1.5-1.5,1.5-1.5h9C15.7,1.9,8.7,7,8.7,16.1
+	C8.7,25,15.6,30,16.2,30.5z"/>
+</svg>

@@ -1,0 +1,23 @@
+footer{
+	margin-top:125px;
+	position: relative;
+}
+.ft-wrapper{
+	position: relative;
+    z-index: 1;
+}
+.ft-background{
+	position: absolute;
+	background-color: #4c69e0;
+	height:100%;
+	width:100%;
+	min-height:306px;
+	top:0;
+	left:0;
+	z-index:0;
+	svg{
+		position: absolute;
+		top: -1px;
+		left: 0px;
+	}
+}

@@ -1,0 +1,45 @@
+#language{
+	position:fixed;
+	text-align: center;
+	z-index:1;
+	bottom: 5px;
+    right: 20px;
+	li{
+		display: inline-block;
+		width:35px;
+		height:35px;
+		border-radius:100%;
+		color:#fff;
+		padding: 8px 7px;
+    	font-weight:400;
+    	cursor:pointer;
+		//margin-bottom:15px;
+		margin-right:6px;
+	}
+	li:last-child{
+		//margin-bottom:0;
+		margin-right:0;
+	}
+}
+.en{
+	background-color: #dc34ff;
+    box-shadow: 0 1px 5px rgba(220, 52, 255, 0.8);
+}
+.ben{
+	background-color: #ffc952;
+	box-shadow: 0 1px 5px rgba(255, 116, 115, 0.8);
+}
+.hin{
+	background-color: #3cc382;
+	box-shadow: 0 1px 10px rgba(60, 195, 130, 0.8);
+}
+
+@mixin lang--sd() {
+	#language{
+		bottom:35px;
+		li{
+			display: block;
+			margin-bottom: 10px;
+		}
+	}
+}

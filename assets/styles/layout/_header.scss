@@ -1,0 +1,74 @@
+header{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.header-background{
+	position: absolute;
+	top:0;
+	right: -28px;
+	width:100%;
+	z-index: 1;
+}
+.header-wrapper{
+	position: relative;
+	z-index:2;
+	height:220px;
+    width: 88vw;
+    margin: 0 auto;
+	display: flow-root;
+}
+
+
+@mixin header-lay--sm() {
+    .header-wrapper{
+		padding: 10px 0;
+	}
+}
+
+@mixin header-lay--mm(){
+	.header-background{
+		top:-25px;
+		right: 0;
+	}
+	.header-wrapper{
+		width: 85vw;
+		padding: 18px 0;
+	}
+}
+
+@mixin header-lay--lm(){
+	.header-background{
+		top:-45px;
+	}
+}
+
+@mixin header-lay--st(){
+	.header-background{
+		top:-65px;
+	}
+}
+
+@mixin header-lay--lt(){
+	.header-background{
+		top:-100px;
+	}
+	.header-wrapper{
+		padding: 25px 0;
+	}
+}
+
+@mixin header-lay--sd(){
+	.header-background{
+		top:-135px;
+	}
+	.header-wrapper{
+		width: 90%;
+	}
+}
+
+@mixin header-lay--ld(){
+	.header-background{
+		top:-205px;
+	}
+}

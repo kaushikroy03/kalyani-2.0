@@ -1,0 +1,93 @@
+.cover{
+	position:relative;
+    margin-top:-220px;
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+}
+
+.cover-text{
+	display: flex;
+	flex:1;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	background-color: #fff6a8;
+
+	h1{
+		font-size: 16px;
+		//font-size: 50px;
+		//margin:15px 0;
+	}
+	li{
+		display: inline-block;
+		font-size: 14px;
+		margin: 0px 6px 14px;
+		//font-size: 35px;
+		//margin: 12px 20px;
+	}
+}
+
+.cover-img{
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+
+
+@mixin cover--mm(){
+	.cover-text{
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    margin: auto;
+	    background-color: transparent;
+		h1, li{
+			color: #fff;
+		}
+	}
+}
+@mixin cover--lm(){
+	.cover-text{
+		h1{
+			font-size: 18px;
+		}
+		li{
+			font-size: 16px;
+		}
+	}
+}
+@mixin cover--st() {
+	.cover-text{
+		h1{
+			font-size: 20px;
+		}
+		li{
+			font-size: 18px;
+		}
+	}
+}
+@mixin cover--lt(){
+	.cover-text{
+		h1{
+			font-size: 22px;
+		}
+		li{
+			font-size: 20px;
+		}
+	}
+}
+@mixin cover--sd(){
+	.cover-text{
+		h1{
+			font-size: 30px;
+		}
+		li{
+			font-size: 24px;
+		}
+	}
+}

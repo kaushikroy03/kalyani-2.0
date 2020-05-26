@@ -1,0 +1,13 @@
+.side-line{
+    padding-left: 10px;
+}
+.side-line::before{
+    content: '';
+    width:2px;
+    height: 100%;
+    background-color: #ff4e8f;
+    border-radius: 2px;
+    position: absolute;
+    left:0;
+    top:0;
+}

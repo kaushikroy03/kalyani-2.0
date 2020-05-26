@@ -1,0 +1,60 @@
+.page-name-cover{
+    background: #ff2374;
+    width: 50vw;
+    height: 18vw;
+    border-top-right-radius: 9vw;
+    border-bottom-right-radius: 9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-125px;
+    .page-name{
+        font-size:20px;
+        color:#fff;
+        margin-left: -1%;
+    }
+}
+//480
+@mixin page-name--mm() {
+    .page-name-cover{
+        margin-top:-100px;
+    }
+}
+//640
+@mixin page-name--lm() {
+    .page-name-cover{
+        .page-name{
+            font-size:24px;
+        }
+    }
+}
+//720
+@mixin page_name--st() {
+    .page-name-cover{
+        width: 45vw;
+        height:15vw;
+    }
+}
+//1024
+@mixin page-name--lt() {
+    .page-name-cover{
+        width: 40vw;
+        height:13vw;
+        margin-top:-70px;
+        .page-name{
+            font-size:32px;
+        }
+    }
+}
+//1366
+@mixin page-name--sd() {
+    .page-name-cover{
+        width: 30vw;
+        height:10vw;
+        margin-top:-40px;
+        .page-name{
+            font-size:36px;
+            margin-left: -6%;
+        }
+    }
+}
