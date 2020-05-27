@@ -268,9 +268,11 @@ $(document).ready(function(){
 		e.preventDefault();
 
 		var text = 'Hi! I want to talk about a patient.';
-		var url = 'https://api.whatsapp.com/send?phone=918906525379&text='+encodeURIComponent(text);
+		var url = 'https://api.whatsapp.com/send?phone=919830189189&text='+encodeURIComponent(text);
 
-		window.location.href = url;
+		//window.location.href = url;
+
+		window.open(url,'_blank');
 	});
 
 
