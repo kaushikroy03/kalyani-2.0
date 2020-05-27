@@ -226,7 +226,7 @@ $(document).ready(function(){
 	            contentType: false,
 	            success: function(response){
 	                if(response.status == "success"){
-	                	$(this).trigger('reset');
+	                	$('#contact-form')[0].reset();
 	                    $('body').append('<div class="ajaxPopup bounceInDown animated text-cen"><div><img src="'+domain+'assets/images/received.png" width="50px"></div><div class="navy">'+ sucMsg+ '</div></div>');
 	                }else{
 	                    $('body').append('<div class="ajaxPopup bounceInDown animated text-cen"><div><img src="'+domain+'assets/images/connection-error.png" width="50px"></div><div class="red">'+ errMsg +'</div></div>');
@@ -238,9 +238,9 @@ $(document).ready(function(){
 	            },
 	            error: function(error){
 	            	$('body').append('<div class="ajaxPopup bounceInDown animated text-cen"><div><img src="'+domain+'assets/images/connection-error.png" width="50px"></div><div class="red">'+ errMsg +'</div></div>');
-	            	/*setTimeout(function(){
+	            	setTimeout(function(){
 			        	$('.ajaxPopup').fadeOut(200);
-			        }, 3000);*/
+			        }, 3000);
 	            }
 	        });
         }
