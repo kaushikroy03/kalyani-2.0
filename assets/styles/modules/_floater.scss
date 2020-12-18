@@ -1,0 +1,22 @@
+#floater{
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	transform: translateY(calc(100% - 50px));
+	transition: transform 300ms ease;
+}
+// #floater.closedFloater{
+// 	-webkit-transform: translateY(calc(100% - 50px));
+// 	-moz-transform: translateY(calc(100% - 50px));
+// 	-ms-transform: translateY(calc(100% - 50px));
+// 	-o-transform: translateY(calc(100% - 50px));
+// 	transform: translateY(calc(100% - 50px));
+// }
+#floater.openedFloater{
+	-webkit-transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+	-o-transform: translateY(0%);
+	transform: translateY(0%);
+}

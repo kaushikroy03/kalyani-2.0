@@ -94,10 +94,10 @@ $(document).ready(function(){
 
 
 	function showError(input, message){
-		var parent = input.parent();
+		var parent = $(input).parent();
 
-		input.css('border', '2px solid #ff6798');
-		parent.append('<div class="error">'+message+'</div>');
+		$(input).css('border', '2px solid #ff6798');
+		$(parent).append('<div class="error">'+message+'</div>');
 
 		$('.error').fadeIn();
 
@@ -274,6 +274,83 @@ $(document).ready(function(){
 
 		window.open(url,'_blank');
 	});
+
+
+	function closeAskModal(){
+		//$('#floater').animate({top: calc(101vh - 50px)}, 300);
+		var date = new Date();
+        date.setTime(date.getTime() + (1 * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toGMTString();
+		document.cookie = "askModal=closed" + expires + "; path=/";
+
+		$('#floater').removeClass('openedFloater');
+	}
+
+	$('#ask-form').submit(function(e){
+		e.preventDefault();
+		var href = 'https://formcarry.com/s/sVZyDpxyUuK',
+			data = new FormData(this);
+
+		var url = $(location).attr('href'),
+			urlParams = url.split('/'),
+			lang = urlParams[urlParams.length - 2];
+
+		var sucMsg = 'We\'ll contact you regarding this.',
+			errMsg = 'An error occured. Please try again later.';
+
+			if (lang == 'ben') {
+				var sucMsg = 'আমরা এই বিষয়ে আপনার সাথে যোগাযোগ করব।',
+					errMsg = 'একটি এরর ঘটেছে, পরে আবার চেষ্টা করুন।';
+			}
+			if (lang == 'hin') {
+				var sucMsg = 'हम आपसे इस संबंध में संपर्क करेंगे।',
+					errMsg = 'एक त्रुटि हुई, बाद में पुन: प्रयास करें।';
+			}
+
+		$.ajax({
+			type: "POST",
+			url: href,
+			data: new FormData(this),
+			dataType: "json",
+			processData: false,
+			contentType: false,
+			success: function(response){
+				if(response.status == "success"){
+					closeAskModal();
+					$('body').append('<div class="ajaxPopup bounceInDown animated text-cen"><div><img src="'+domain+'assets/images/received.png" width="50px"></div><div class="navy">'+ sucMsg+ '</div></div>');
+				}else{
+					$('body').append('<div class="ajaxPopup bounceInDown animated text-cen"><div><img src="'+domain+'assets/images/connection-error.png" width="50px"></div><div class="red">'+ errMsg +'</div></div>');
+				}
+
+				setTimeout(function(){
+					$('.ajaxPopup').fadeOut(200);
+				}, 5000);
+			},
+			error: function(error){
+				$('body').append('<div class="ajaxPopup bounceInDown animated text-cen"><div><img src="'+domain+'assets/images/connection-error.png" width="50px"></div><div class="red">'+ errMsg +'</div></div>');
+				setTimeout(function(){
+					$('.ajaxPopup').fadeOut(200);
+				}, 3000);
+			}
+		});
+
+
+	});
+
+	$(document).on('click', '#closeAskModal', function(){
+		closeAskModal();
+	});
+
+	var askModal = document.cookie,
+		askModalArr = askModal.split('=');
+
+	if (askModalArr[0] == 'askModal' && askModalArr[1] == 'closed') {
+		$('#floater').removeClass('openedFloater');
+	}
+
+	if (askModal.length == 0) {
+		$('#floater').addClass('openedFloater');
+	}
 
 
 });
