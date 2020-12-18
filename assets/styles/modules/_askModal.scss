@@ -1,0 +1,75 @@
+.openedFloater{
+	#askModal{		
+		box-shadow: 0 -3px 15px rgba(0,0,0,.3);
+	}
+}
+#askModal{
+	background-color: #05c167;
+    width: 100%;
+    min-height: 100px;
+    padding-bottom: 12px;
+	padding-top: 6px;
+	position: relative;
+	.modal-content{
+		height: unset;
+	}
+    .modal-text{
+    	color: #fff;
+		margin-bottom: 18px;
+    }
+	input[type="tel"]{
+		width: 100%;
+		height: 40px;
+		border:none;
+		padding-left: 45px;
+	}
+	.form-content{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #fff;
+		border-radius: 6px;
+		overflow: hidden;
+		padding-right: 6px;
+	}
+	.pre-number{
+		color: #272d38;
+		position: absolute;
+	    left: 12px;
+	    top: 11px;
+	}
+}
+#closeAskModal{
+	position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-weight: 600;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	cursor: pointer;
+}
+
+@mixin askModal--lm() {
+	#askModal{
+		.modal-text{
+			margin-bottom: 0;
+			margin-right: 18px;
+	    }
+	}
+	.modal-content{
+		align-items: center;
+		justify-content: center;
+	}
+	.modal-content, .modal-text, .form-content{
+		display: flex;
+		flex: 1;
+	}
+	.modal-text, .form-content{
+		max-width: 300px;
+	}
+}

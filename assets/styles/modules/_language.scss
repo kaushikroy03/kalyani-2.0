@@ -1,11 +1,11 @@
 #language{
-	position:fixed;
 	text-align: center;
-	z-index:1;
-	bottom: 5px;
-    right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-bottom: 15px;
 	li{
-		display: inline-block;
 		width:35px;
 		height:35px;
 		border-radius:100%;
@@ -14,11 +14,7 @@
     	font-weight:400;
     	cursor:pointer;
 		//margin-bottom:15px;
-		margin-right:6px;
-	}
-	li:last-child{
-		//margin-bottom:0;
-		margin-right:0;
+		margin-left:6px;
 	}
 }
 .en{
