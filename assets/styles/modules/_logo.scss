@@ -1,5 +1,7 @@
 #logo{
 	float: left;
+	display: flex;
+	align-items: flex-end;
 	a{
 		display: inline-block;
 		color: #4c69e0;
@@ -8,6 +10,11 @@
 		width:30px;
 		height:30px;
 	}
+}
+.gov{
+	margin-left: 10px;
+    color: #fff;
+    font-weight: 600;
 }
 
 /*.logo-blue{
@@ -24,12 +31,12 @@
 	#logo{
 		span{
 			display: inline-block;
-			vertical-align: middle;
+			//vertical-align: middle;
 		}
 	}
 	.logo-name{
 		font-size: 18px;
-		line-height: 33px;
+		//line-height: 33px;
 	}
 }
 
