@@ -167,7 +167,7 @@ $(document).ready(function(){
 
 	$(".ajax-form").submit(function(e){
         e.preventDefault();
-        var href = 'https://formcarry.com/s/GnHkFWEZwc';
+        var href = 'https://formcarry.com/s/LIFWTNCf-tv';
 
         var error = false,
 			numEmail = false;
@@ -288,7 +288,7 @@ $(document).ready(function(){
 
 	$('#ask-form').submit(function(e){
 		e.preventDefault();
-		var href = 'https://formcarry.com/s/GnHkFWEZwc',
+		var href = 'https://formcarry.com/s/LIFWTNCf-tv',
 			data = new FormData(this);
 
 		var url = $(location).attr('href'),
