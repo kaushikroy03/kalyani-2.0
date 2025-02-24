@@ -2,7 +2,7 @@ $(function(){
 
 $(document).ready(function(){
 
-	var domain = 'http://kalyani-foundation.com/';
+	var domain = 'http://kalyanifoundation.in/';
 
 	$('#ham').click(function(e){
 		e.stopPropagation();
